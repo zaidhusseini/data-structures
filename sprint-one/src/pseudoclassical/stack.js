@@ -8,13 +8,14 @@ var Stack = function() {
 Stack.prototype.push = function(value){
   this[this.length]=value;
   this.length++;
-}
+};
 
 Stack.prototype.pop = function(){
   this.length--;
   var temp = this[this.length];
   return temp;
-}
+};
+
 Stack.prototype.size = function(){
   return Math.max(this.length,0);
-}
+};
