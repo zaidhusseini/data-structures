@@ -26,6 +26,6 @@ queueMethods.dequeue = function(){
   
 queueMethods.size = function(){
   return Math.max(0,this.length-this.index);
-};
+}; 
 
 
