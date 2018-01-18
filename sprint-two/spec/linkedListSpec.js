@@ -52,4 +52,26 @@ describe('linkedList', function() {
   });
 
   // add more tests here to test the functionality of linkedList
+
+  it('should handle strings & booleans', function() {
+    linkedList.addToTail("hello");
+    linkedList.addToTail(false);
+    expect(linkedList.contains(false)).to.equal(true);
+    expect(linkedList.contains("hello")).to.equal(true);
+    
+  });
+
+  it('should have a size property to return the length of the Linked List ', function(){
+    linkedList.addToTail("hi");
+    linkedList.addToTail(true);
+    linkedList.addToTail(5);
+    expect(linkedList.size).to.equal(3);
+    linkedList.removeHead();
+    expect(linkedList.size).to.equal(2);
+  });
+  // other test ideas 
+  // should handle different data types 
+  // when adding to tail, should only alter next property of previous tail
+  // should have a insertion method
+    
 });
