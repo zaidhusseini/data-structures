@@ -15,12 +15,12 @@ var stackMethods = {};
 
 
 stackMethods.push = function(value){
-	this.storage[this.length] = value;
-	this.length++;
+  this.storage[this.length] = value;
+  this.length++;
 };
 
 stackMethods.pop = function(){
-	this.length--;
+  this.length--;
   var temp = this.storage[this.length];
   this.length = Math.max(0,this.length);
   return temp;
