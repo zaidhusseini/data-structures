@@ -3,6 +3,7 @@ var LinkedList = function() {
   list.head = null;
   list.tail = null;
   list.size = 0;
+  // test comment
 
   list.addToTail = function(value) {
     var newNode = Node(value);
