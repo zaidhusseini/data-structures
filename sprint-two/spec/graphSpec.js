@@ -68,4 +68,7 @@ describe('graph', function() {
     expect(graph.hasEdge(3, 5)).to.equal(true);
     expect(graph.hasEdge(5, 5)).to.equal(true);
   });
+
+  // addEdge should only add edge to a node if it doesn't exist already
+  
 });
