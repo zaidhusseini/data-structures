@@ -55,4 +55,12 @@ Graph.prototype.forEachNode = function(cb) {
  * Complexity: What is the time complexity of the above functions?
  */
 
+// addNode = O(1)
+// contains = O(1)
+// removeNode = O(n^2) -- we could optimize to O(n) if we change edge value to object instead of array
+// hasEdge = O(n) -- could optimize as above
+// addEdge = O(1) 
+// removeEdge = O(n) -- could optimize as above
+// forEachNode = O(n)
+
 
