@@ -1,6 +1,7 @@
 var Tree = function(value) {
   var newTree = {};
   newTree.value = value;
+  newTree.parent = null; //create a ref to parent tree
   // your code here
   newTree.children = [];  // fix me
 
@@ -13,6 +14,7 @@ var treeMethods = {};
 
 treeMethods.addChild = function(value) {
   var babyTree = Tree(value);
+  babyTree.parent = this;
   this.children.push(babyTree);
 };
 
