@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Functional Shared</title>
+  </head>
+  <body>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/underscore/underscore.js"></script>
+    <script src="../sprint-one/src/functional-shared/stack.js"></script>
+    <script src="../sprint-one/src/functional-shared/queue.js"></script>
+    <script>
+      var myStacks = [];
+      var myQueues = [];
+      for (var i=0; i<10000; i++){
+        myStacks.push(Stack());
+        myQueues.push(Queue());
+      }    
+    </script>
+  </body>
+</html>
